@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/livro.css') }}">
+    <title>Atualizar Livro</title>
+</head>
+<body>
+
+    
+    <form method="POST" enctype="multipart/form-data">
+    <h1>Atualizar Livro</h1>
+    {{ form.hidden_tag() }}
+    
+    {{ form.titulo.label }}
+    {{ form.titulo(class="form-control") }}
+    
+    {{ form.autor.label }}
+    {{ form.autor(class="form-control") }}
+    
+    {{ form.ano_publicacao.label }}
+    {{ form.ano_publicacao(class="form-control") }}
+    
+    {{ form.descricao.label }}
+    {{ form.descricao(class="form-control") }}
+    
+    {{ form.arquivo_pdf.label }}
+    {{ form.arquivo_pdf(class="form-control") }}
+    
+    {{ form.submit(class="btn btn-primary") }}
+</form>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: rgb(198,123,249);
+background: linear-gradient(90deg, rgba(198,123,249,1) 0%, rgba(250,74,74,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+}
+
+.auth-buttons button {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo para o botão de login (verde) */
+.auth-buttons #login-button {
+    background-color: #29b92b;
+    color: #fff;
+}
+
+/* Estilo para o botão de cadastrar (azul) */
+
+.auth-buttons #cadastrar-button {
+    background-color: #3498db; 
+    color: #fff;
+}
+
+#cadastrarLivro-button {
+    background-color: #db34bf; 
+    margin: 10px;
+    color: #fff;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    opacity: 0.8;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book-card {
+    background-color: #ffffff; /* Cor de fundo do card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 15px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book-title {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.book-author {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.add-to-favorites {
+    background-color: #3498db; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-favorites:hover {
+    background-color: #2980b9; /* Cor do botão ao passar o mouse */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.livro-card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.livro-card h2 {
+    color: #333;
+}
+
+.livro-card p {
+    color: #666;
+}
+
+form button[type="submit"] {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+form button[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+form button[type="submit"].update {
+    background-color: #ffd700; /* Amarelo */
+    color: #ffffff;
+}
+
+form button[type="submit"].delete {
+    background-color: #ff0000; /* Vermelho */
+    color: #fff;
+}
+
+.search-form {
+    /* display: flex; */
+    /* align-items: center; */
+    margin: 60px;
+}
+
+.search-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+}

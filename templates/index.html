@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Catálogo de Livros</title>
+</head>
+<body>
+
+    
+    <div class="auth-buttons">
+        <button id="login-button" onclick="window.location.href='/login'">Login</button>
+        <button id="cadastrar-button" onclick="window.location.href='/cadastrar'">Cadastrar</button>
+    </div>
+
+    <form method="GET" action="{{ url_for('pesquisar_livros') }}" class="search-form">
+        <input type="text" name="query" placeholder="Pesquisar livros...">
+        <button type="submit">Pesquisar</button>
+    </form>
+
+    <h1>Lista de Livros</h1>
+
+    {% for livro in livros %}
+        <div class="livro-card">
+            <h2>{{ livro.titulo }}</h2>
+            <p>Autor: {{ livro.autor }}</p>
+            <p>Ano de Publicação: {{ livro.ano_publicacao }}</p>
+            <p>Descrição: {{ livro.descricao }}</p>
+            <form method="POST" action="{{ url_for('atualizar_livro', livro_id=livro.id) }}">
+                <button type="submit" class="update">Update</button>
+            </form>
+            <form method="POST" action="{{ url_for('deletar_livro', livro_id=livro.id) }}">
+                <button type="submit" class="delete">Delete</button>
+            </form>
+        </div>
+    {% endfor %}
+
+    
+    <button id="cadastrarLivro-button" onclick="window.location.href='/cadastrarLivros'">Cadastrar Livro</button>
+    
+
+</div>
+
+</body>
+</html>

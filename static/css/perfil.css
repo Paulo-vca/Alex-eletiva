@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-card {
+    background-color: #ffffff; /* Cor de fundo do card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra */
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #3498db; /* Cor da imagem de perfil */
+    margin-bottom: 10px;
+}
+
+.user-details {
+    color: #333333; /* Cor do texto */
+}
+
+.book-carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.book {
+    width: 100px;
+    height: 150px;
+    background-color: #e74c3c; /* Cor do quadrado do livro */
+    margin: 0 10px;
+    /* Adicione imagem ou conteúdo dentro do quadrado do livro conforme necessário */
+}

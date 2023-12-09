@@ -1,0 +1,6 @@
+Olá, Alex.
+
+Aqui vai algumas informações sobre aplicação.
+
+- Ao cadastrar qualquer tipo de informação nos formularios, o senhor deve interromper a aplicação, 
+para que os dados sejam adicionados ao banco de dados.
